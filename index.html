@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DaisyUI & Tailwind  -->
     <title>Donate Bangldesh</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Tailwind Color Theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-color": "rgba(180, 244, 97, 1)",
+              "bg-color": "rgba(249, 247, 243, 1)",
+              "amount-color": "rgba(17, 17, 17, 0.7)",
+              "btn-border-color": "rgba(17, 17, 17, 0.3)",
+              "card-border": "rgba(17, 17, 17, 0.1)",
+              "bg-point-card": "rgba(17, 17, 17, 0.05)",
+            },
+            fontFamily: {
+              "Lexend-font": "Lexend, sans-serif",
+            },
+            fontWeight: {
+              header: "600",
+              title: "700",
+              description: "300",
+              amount: "500",
+            },
+            fontSize: {
+              "title-size": "1.25rem",
+              "description-size": "1rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Lexend-font bg-bg-color">
+    <header>
+      <nav class="flex w-10/12 mx-auto justify-between items-center py-5">
+        <button
+          class="btn bg-btn-color border-none font-header text-title-size font-semibold"
+        >
+          Blog
+        </button>
+        <div class="flex justify-center items-center gap-x-3">
+          <img src="./assets/logo.png" alt="logo" />
+          <h1 class="font-Lexend-font font-header text-title-size">
+            Donate Bangladesh
+          </h1>
+        </div>
+        <div class="flex justify-center items-center gap-x-3">
+          <img src="./assets/coin.png" alt="coin" />
+          <p
+            class="text-title-size font-Lexend-font font-amount text-amount-color"
+          >
+            5500 <span>BD</span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <!-- Content Section  -->
+    <main class="bg-white">
+      <div class="flex w-10/12 mx-auto justify-center items-center py-20">
+        <div class="flex justify-between items-center gap-x-3">
+          <button
+            class="btn bg-btn-color border-none text-title-size font-semibold"
+          >
+            Donation
+          </button>
+          <button
+            class="btn btn-outline border-btn-border-color text-title-size font-semibold"
+          >
+            History
+          </button>
+        </div>
+      </div>
+
+      <div class="flex w-10/12 mx-auto justify-center items-center py-5">
+        <div class="border border-card-border rounded-xl w-full">
+          <div class="grid grid-cols-2 p-8">
+            <img src="./assets/noakhali.png" alt="" srcset="" />
+            <div class="ml-3">
+              <div
+                class="flex justify-center items-center drop-shadow-md bg-bg-point-card p-2 w-28 rounded-md gap-x-2 mb-3"
+              >
+                <img src="./assets/coin.png" alt="coin" />
+                <p>0 <span>BDT</span></p>
+              </div>
+              <h1 class="font-title text-title-size mb-3">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="font-description text-base text-amount-color mb-5">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full text-base font-light mb-5"
+              />
+              <button
+                class="w-full btn bg-btn-color border-none text-title-size font-semibold"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-10/12 mx-auto justify-center items-center py-5">
+        <div class="border border-card-border rounded-xl w-full">
+          <div class="grid grid-cols-2 p-8">
+            <img src="./assets/feni.png" alt="" srcset="" />
+            <div class="ml-3">
+              <div
+                class="flex justify-center items-center drop-shadow-md bg-bg-point-card p-2 w-28 rounded-md gap-x-2 mb-3"
+              >
+                <img src="./assets/coin.png" alt="coin" />
+                <p>0 <span>BDT</span></p>
+              </div>
+              <h1 class="font-title text-title-size mb-3">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="font-description text-base text-amount-color mb-5">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full text-base font-light mb-5"
+              />
+              <button
+                class="w-full btn bg-btn-color border-none text-title-size font-semibold"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-10/12 mx-auto justify-center items-center py-5">
+        <div class="border border-card-border rounded-xl w-full">
+          <div class="grid grid-cols-2 p-8">
+            <img src="./assets/quota-protest.png" alt="" srcset="" />
+            <div class="ml-3">
+              <div
+                class="flex justify-center items-center drop-shadow-md bg-bg-point-card p-2 w-28 rounded-md gap-x-2 mb-3"
+              >
+                <img src="./assets/coin.png" alt="coin" />
+                <p>0 <span>BDT</span></p>
+              </div>
+              <h1 class="font-title text-title-size mb-3">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="font-description text-base text-amount-color mb-5">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full text-base font-light mb-5"
+              />
+              <button
+                class="w-full btn bg-btn-color border-none text-title-size font-semibold"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="h-28"></footer>
+  </body>
 </html>
