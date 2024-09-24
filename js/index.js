@@ -22,6 +22,8 @@ document.getElementById("btn-noakhali").addEventListener("click", function () {
     return alert("Please Donate Any Amount");
   } else if (isNaN(inputValue)) {
     return alert("Not a Number");
+  }else if (inputValue > amount) {
+    return alert("You have not enough balance");
   } else {
     const totalNoakhaliAmount = inputValue + noakhaliAmount;
     document.getElementById("amount-noakhali").innerText = totalNoakhaliAmount;
@@ -45,6 +47,9 @@ document.getElementById("btn-feni").addEventListener("click", function () {
     return alert("Please Donate Any Amount");
   } else if (isNaN(inputValue)) {
     return alert("Not a Number");
+  }
+  else if (inputValue > amount) {
+    return alert("You have not enough balance");
   } else {
     const totalFeniAmount = inputValue + feniAmount;
     document.getElementById("amount-feni").innerText = totalFeniAmount;
@@ -70,7 +75,10 @@ document.getElementById("btn-quota").addEventListener("click", function () {
     return alert("Please Donate Any Amount");
   } else if (isNaN(inputValue)) {
     return alert("Not a Number");
-  } else {
+  } 
+  else if (inputValue > amount) {
+    return alert("You have not enough balance");
+  }else {
     const totalFeniAmount = inputValue + feniAmount;
     document.getElementById("amount-quota").innerText = totalFeniAmount;
     const mainbalance = amount - inputValue;
@@ -79,3 +87,10 @@ document.getElementById("btn-quota").addEventListener("click", function () {
     transactionHistory(inputValue,title,date);
   }
 });
+
+document.getElementById("btn-blog").addEventListener("click",function(){
+  showSelectionById("blog")
+})
+document.getElementById("btn-blog-mobile").addEventListener("click",function(){
+  showSelectionById("blog")
+})
